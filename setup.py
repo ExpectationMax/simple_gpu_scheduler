@@ -1,9 +1,15 @@
 from setuptools import setup
 
+def read_readme():
+    with open('README.md') as f:
+        return f.read()
+
 setup(
     name='simple_gpu_scheduler',
-    version='0.1',
+    version='0.1.2',
     description='A simple scheduler for running commands on multiple GPUs.',
+    long_description=read_readme(),
+    long_description_content_type='text/markdown',
     url='https://github.com/ExpectationMax/simple_gpu_scheduler',
     author='Max Horn',
     author_email='maexlich@gmail.com',
