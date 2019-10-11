@@ -114,7 +114,7 @@ def read_commands_and_run(gpu_manager):
 def main():
     """Read command line arguments and start reading from stdin."""
     parser = argparse.ArgumentParser()
-    parser.add_argument('--gpus', nargs='+', type=int, required=True)
+    parser.add_argument('--gpus', nargs='+', type=str, required=True)
     args = parser.parse_args()
 
     # Support both comma separated and individually passed GPU ids
