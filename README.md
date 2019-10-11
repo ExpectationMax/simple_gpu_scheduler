@@ -12,7 +12,8 @@ pipes `|` and all other kinds of bash magic can be used.
 Installation
 ------------
 
-The package can simply be installed from [pypi](https://pypi.org/)
+The package can simply be installed from
+[pypi](https://pypi.org/project/simple-gpu-scheduler/)
 ```bash
 $ pip install simple_gpu_scheduler
 ```
