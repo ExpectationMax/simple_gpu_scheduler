@@ -30,40 +30,29 @@ for i in {0..10}; do echo "echo job_id=$i device=\$CUDA_VISIBLE_DEVICES && sleep
 which results in the following output:
 
 ```
-Processing command echo job_id=0 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 2
-echo job_id=0 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=1 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 1
-echo job_id=1 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=2 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 0
+Processing `command echo job_id=0 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 2
+Processing `command echo job_id=1 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 1
+Processing `command echo job_id=2 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 0
 job_id=0 device=2
-echo job_id=2 device=$CUDA_VISIBLE_DEVICES && sleep 3
 job_id=1 device=1
 job_id=2 device=0
 --- 3 seconds no output ---
-Processing command echo job_id=3 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 2
-echo job_id=3 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=4 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 1
-echo job_id=4 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=5 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 0
+Processing command `echo job_id=3 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 2
+Processing command `echo job_id=4 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 1
+Processing command `echo job_id=5 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 0
 job_id=3 device=2
-echo job_id=5 device=$CUDA_VISIBLE_DEVICES && sleep 3
 job_id=4 device=1
 job_id=5 device=0
 --- 3 seconds no output ---
-Processing command echo job_id=6 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 2
-echo job_id=6 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=7 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 1
-echo job_id=7 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=8 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 0
+Processing command `echo job_id=6 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 2
+Processing command `echo job_id=7 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 1
+Processing command `echo job_id=8 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 0
 job_id=6 device=2
-echo job_id=8 device=$CUDA_VISIBLE_DEVICES && sleep 3
 job_id=7 device=1
 job_id=8 device=0
 --- 3 seconds no output ---
-Processing command echo job_id=9 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 2
-echo job_id=9 device=$CUDA_VISIBLE_DEVICES && sleep 3
-Processing command echo job_id=10 device=$CUDA_VISIBLE_DEVICES && sleep 3 on gpu 0
-echo job_id=10 device=$CUDA_VISIBLE_DEVICES && sleep 3
+Processing command `echo job_id=9 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 2
+Processing command `echo job_id=10 device=$CUDA_VISIBLE_DEVICES && sleep 3` on gpu 0
 job_id=9 device=2
 job_id=10 device=0
 ```
