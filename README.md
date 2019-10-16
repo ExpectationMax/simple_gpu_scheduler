@@ -15,7 +15,7 @@ Installation
 The package can simply be installed from
 [pypi](https://pypi.org/project/simple-gpu-scheduler/)
 ```bash
-$ pip install simple_gpu_scheduler
+$ pip3 install simple-gpu-scheduler
 ```
 
 Simple Example
