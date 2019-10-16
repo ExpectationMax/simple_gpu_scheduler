@@ -73,7 +73,7 @@ def build_hyperparameter_search():
     parser.add_argument(
         '--sampling-mode', type=str,
         choices=['shuffled_grid', 'grid'],
-        default='grid',
+        default='shuffled_grid',
         help='Determine how to sample commands. Either in the '
              'grid order [grid] or in a shuffled order '
              '[shuffled_grid, default].'
