@@ -1,4 +1,4 @@
-VERSION=0.1.3
+VERSION=0.1.4
 WHEEL=dist/simple_gpu_scheduler-$(VERSION)-py3-none-any.whl
 SOURCE_DIST=dist/simple_gpu_scheduler-$(VERSION).tar.gz
 
