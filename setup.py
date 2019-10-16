@@ -22,7 +22,9 @@ setup(
     ],
     entry_points={
       'console_scripts': [
-          'simple_gpu_scheduler=simple_gpu_scheduler.command_line:main'],
+          'simple_gpu_scheduler=simple_gpu_scheduler.scheduler:main',
+          'simple_hypersearch=simple_gpu_scheduler.hypersearch:generate_commands'
+      ],
     },
     zip_safe=False
 )
