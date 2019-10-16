@@ -6,7 +6,7 @@ def read_readme():
 
 setup(
     name='simple_gpu_scheduler',
-    version='0.1.2',
+    version='0.1.3',
     description='A simple scheduler for running commands on multiple GPUs.',
     long_description=read_readme(),
     long_description_content_type='text/markdown',
