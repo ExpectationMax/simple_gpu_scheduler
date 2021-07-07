@@ -81,7 +81,7 @@ def run_command_with_gpu(command, gpu):
         myenv = os.environ.copy()
         myenv['CUDA_VISIBLE_DEVICES'] = str(gpu)
         proc = subprocess.Popen(
-            args=command,
+            args=["/bin/bash", "-i", "-c", command],
             shell=True,
             env=myenv,
             executable='/bin/bash',
