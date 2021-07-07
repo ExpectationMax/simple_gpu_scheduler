@@ -83,7 +83,8 @@ def run_command_with_gpu(command, gpu):
         proc = subprocess.Popen(
             args=command,
             shell=True,
-            env=myenv
+            env=myenv,
+            executable='/bin/bash',
         )
         proc.wait()
         gpu.release()
