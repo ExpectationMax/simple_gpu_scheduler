@@ -75,15 +75,17 @@ def run_command_with_gpu(command, gpu):
     """
     myenv = os.environ.copy()
     myenv['CUDA_VISIBLE_DEVICES'] = str(gpu)
-    print(f'Processing command `{command}` on gpu {gpu}')
+    print(f'Processing /bin/bash command `{command}` on gpu {gpu}')
 
     def run_then_release_GPU(command, gpu):
         myenv = os.environ.copy()
         myenv['CUDA_VISIBLE_DEVICES'] = str(gpu)
+        print("Trying bash command')
         proc = subprocess.Popen(
-            args=command,
+            args=["/bin/bash", "-i", "-c", command],
             shell=True,
-            env=myenv
+            env=myenv,
+            executable='/bin/bash',
         )
         proc.wait()
         gpu.release()
